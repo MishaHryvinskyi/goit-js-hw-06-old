@@ -8,10 +8,16 @@ const ingredients = [
 ];
 
 
-const liItem = document.createElement('li');
-console.log(liItem);
-const markup = ingredients 
-  .map((ingredients) => `<li class="item">${ingredients}</li>`);
-const list =  
-  console.log(ul#ingredients);
+const ingredientsList = document.querySelector('#ingredients');
 
+const items = ingredients.map(ingredient => {
+  const li = document.createElement('li');
+  li.textContent = ingredient;
+  li.classList.add('item');
+  li.style.listStyle = 'square';
+  return li;
+});
+
+ingredientsList.append(...items);
+
+console.log(ingredientsList);

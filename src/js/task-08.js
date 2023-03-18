@@ -23,6 +23,3 @@ if (email.value === '' || password.value === '') {
 
 
 
-
-
-

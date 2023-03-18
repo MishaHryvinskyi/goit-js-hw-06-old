@@ -27,5 +27,4 @@ const galleryMarcup = images.map(({ url, alt }) => {
   return `<li><img src="${url}" alt="${alt}" /></li>`
 }).join(' ');
 
-
 galleryList.insertAdjacentHTML('beforeend', galleryMarcup);
